@@ -39,12 +39,12 @@ const Home = () => {
 
             <div className="cart-container">
                 <h3>This is order cart</h3>
-                {
-                    carts.map(cart => <Cart
-                        key={cart._id}
-                        cart={cart}
-                        handelRemoveCart={handelRemoveCart}></Cart>)
-                }
+
+                <Cart
+                    key={carts._id}
+                    cart={carts}
+                    handelRemoveCart={handelRemoveCart}></Cart>
+
             </div>
         </div>
     );
